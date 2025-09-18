@@ -1,0 +1,31 @@
+{
+  "name": "ai-topic-analyzer",
+  "version": "1.0.0",
+  "description": "AI 即時主題分析器 - 使用 Gemini API 和 Vercel AI SDK",
+  "main": "index.js",
+  "scripts": {
+    "start": "vercel dev",
+    "dev": "nodemon server.js",
+    "install-deps": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ai",
+    "gemini",
+    "analysis",
+    "charts",
+    "vercel-ai-sdk"
+  ],
+  "author": "Wade",
+  "license": "ISC",
+  "dependencies": {
+    "@ai-sdk/google": "^2.0.14",
+    "ai": "^5.0.44",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
