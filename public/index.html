@@ -870,6 +870,19 @@
 
       // [新增] 頁面載入時讀取 localStorage 中的歷史記錄
       loadHistoryFromStorage()
+
+      // [修改] 如果有歷史記錄，預設載入並顯示最新一筆
+      if (analysisHistory.length > 0) {
+        showResults(true) // 先將結果區塊顯示出來
+        const firstTab = document.querySelector('.tab-item')
+        // 預設選中並載入最新一筆分析
+        if (firstTab) {
+          setTimeout(
+            () => loadHistoryAnalysis(analysisHistory[0].id, firstTab),
+            100
+          )
+        }
+      }
     </script>
   </body>
 </html>
